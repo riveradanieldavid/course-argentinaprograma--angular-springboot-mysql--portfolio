@@ -1,0 +1,52 @@
+
+SPRINGBOOT
+1
+extract files .zip (angular) (springboot)
+
+2
+install netbeens (or other IDE)
+	update
+	install pluguins
+
+3
+open springboot project extracted in netbeens
+
+4
+install and open workbench, db manager ( to run mysql)
+	run mysql (user and password should sync whit project!)
+	netstat (show you active ports. usually... 3306 is mysql port)
+	create db mysql (testdb) required to this project
+		specificed in project. in "application.properties" file.
+		then when you clean and compile the project in netbeens, this netbeens creates tables in db "testdb"
+		or find script .sql to create db, tables, and data in workbench (mysql)
+		is necesary to run the app ("testdb")
+
+5
+run project in netbeens
+	clean and compile project opened (build succes!)
+	This creates tables in "testdb" db
+	run script .sql to create data in tables into "testdb"
+
+6
+run project
+	spring-boot:run (click right "execute goals" in navigator)
+	(JVM running for...)
+	db and project is connect and running!
+
+ANGULAR
+1
+open terminal standing in project
+
+2
+install packages npm
+	npm i (or "npm audit fix")
+
+3
+set package.json
+	ng serve -o --port 8080 --live-reload false
+	sometimes should be a specific port!
+
+4
+angular run
+	npm run start
+
